@@ -10,6 +10,7 @@
   --primary-dark: #22c55e;
   --primary-light: #86efac;
   --bg-dark: #1a1a1a;
+  --danger-color: #ef4444;
   --text-light: #f3f4f6;
   --text-gray: #9ca3af;
   --card-bg: #252525;
@@ -102,41 +103,89 @@ header p {
 }
 
 .plan-icon i {
-    font-size: 1.8rem;
-    color: var(--primary-color);
+  font-size: 1.8rem;
+  color: var(--primary-color);
 }
-h3{
-    font-size: 1.5rem;
-    margin-bottom: 15px;
+h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
 }
-.price{
-    margin-bottom: 15px;
+.price {
+  margin-bottom: 15px;
 }
-.currency{
-    font-size: 1.5rem;
-    margin-right: 2px;
-    color: var(--primary-color);
-    vertical-align: top;
+.currency {
+  font-size: 1.5rem;
+  margin-right: 2px;
+  color: var(--primary-color);
+  vertical-align: top;
 }
-.amount{
-    font-size: 3.5rem;
-    font-weight: 700;
-    line-height: 1;
-    color: var(--primary-color);
+.amount {
+  font-size: 3.5rem;
+  font-weight: 700;
+  line-height: 1;
+  color: var(--primary-color);
 }
-.period{
-    font-size: 1rem;
-    color: var(--text-gray);
+.period {
+  font-size: 1rem;
+  color: var(--text-gray);
 }
-.description{
-    font-size: 0.95rem;
-    color: var(--text-gray)
+.description {
+  font-size: 0.95rem;
+  color: var(--text-gray);
 }
-.card-body{
-    padding: 30px;
-    flex-grow: 1;
+.card-body {
+  padding: 30px;
+  flex-grow: 1;
 }
 
-.features{
-    list-style: none;
+.features {
+  list-style: none;
+}
+.features li {
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.features li i {
+  margin-right: 10px;
+  font-size: 0.9rem;
+}
+.features li i.fa-check {
+  color: var(--primary-color);
+}
+.features li i.fa-times {
+  color: var(--danger-color);
+}
+.features li.disabled {
+  opacity: 0.7;
+  color: var(--text-gray);
+}
+.card-footer {
+  padding: 20px 30px 30px;
+}
+.btn {
+  display: block;
+  width: 100%;
+  padding: 14px;
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: center;
+  color: var(--text-light);
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  border-radius:var(--border-radius) ;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.btn:hover{
+    border-color: var(--primary-color);
+    background-color: rgba(74, 222, 128, 0.1);
+}
+.btn-accent{
+    background-color: ;
+}
+.btn-accent:hover{
+    background-color: var(--primary-dark);
+    border-color:var(--primary-dark) ;
 }
